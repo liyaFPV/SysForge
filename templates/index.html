@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Системная информация</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Системная информация</h1>
+
+    <a href="/logout" style="color: #007acc; text-decoration: none;">Выйти</a>
+
+    <h2>CPU:</h2>
+    <p id="cpu">Загрузка...</p>
+
+    <h2>RAM:</h2>
+    <p id="ram">Загрузка...</p>
+
+    <h2>Диски:</h2>
+    <div id="disks">Загрузка...</div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
